@@ -44,9 +44,3 @@ JSON はコメントを自由に入れにくいので、今回は別でこの解
 - `Dockerfile` = コンテナの中身
 - `compose.yml` = コンテナの起動方法
 - `devcontainer.json` = VS Code からどう入るか
-
-## 発表での言い方
-- `compose.yml` は Docker の起動設定
-- `devcontainer.json` は VS Code がその Docker 環境に接続するための設定
-
-この理解で十分です。
