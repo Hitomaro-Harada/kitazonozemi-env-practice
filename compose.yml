@@ -1,0 +1,15 @@
+services:
+  # VS Code から接続する開発用コンテナ
+  app:
+    build:
+      # build の対象はこのリポジトリ
+      context: .
+      # 使う Dockerfile を指定
+      dockerfile: Dockerfile
+    volumes:
+      # 手元の repo をコンテナ内 /workspace にそのままつなぐ
+      - ./:/workspace
+    # コンテナ内で最初に入る作業場所
+    working_dir: /workspace
+    # コンテナがすぐ終了しないようにする
+    tty: true
